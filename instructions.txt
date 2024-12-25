@@ -1,0 +1,31 @@
+# INSTRUCTIONS
+
+## The Scope
+
+First we defined the scope, I choose as a general chatbot which engage in casual conversation
+
+## Collect Data
+
+the dataset is taken from "Cornell Movie Dialogues Dataset"
+
+### Data Verification
+
+we create verify_data.py. here we download the data and checked couple of conversation if the data is correct, and note that it is coming in JSON format. It is structured data
+
+### Input-Response Pairs definition
+
+we create InpRespPairs.py. here we create input_output_pairs dictionary as conversations and this will be used in the next step
+
+### Preprocessing The Text
+
+we create preprocess.py. we are kind of shaping the data by removing unnecessary special characters and extra spaces. we make all the text lowercase as well.
+
+### Splitting The Data
+
+we create split_data.py. we split the data as training and validation pairs. As a result we should get %80 for training and %20 for validating data. this process is to be able to learn, not to memorize the answers
+
+### Tokenization
+
+we create tokenize_chat.py. here we use TensorFlow, our steps: Fitting the tokenizer, converting to sequences,padding sequences and we finally save this tokenizer as tokenizer.pkl file. the reason to do is neural networks work with number, not text.
+
+## Model Design
