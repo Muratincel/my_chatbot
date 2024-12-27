@@ -28,4 +28,18 @@ we create split_data.py. we split the data as training and validation pairs. As 
 
 we create tokenize_chat.py. here we use TensorFlow, our steps: Fitting the tokenizer, converting to sequences,padding sequences and we finally save this tokenizer as tokenizer.pkl file. the reason to do is neural networks work with number, not text.
 
+also tokenized_data.npz is created here (for efficiency purposes, numpy-specific compressed archive format) which stores multiple arrays in a single file for further use
+
 ## Model Design
+
+here we implement the Seq2Seq neural network. we chose one of the architectures RNN, GRU, or LSTM (in our case it is GRU)
+
+### Model Training
+
+we create train_model.py we load tokenizer (tokenizer.pkl) define encoder and decoders, compile the model, load the tokenized and padded data (takenized_data.npz) and we train the model by model.fit 
+
+
+You will only need .npz and .pkl files and train_model.py in order to run. And huge compute power to train..
+
+python v10.0
+TensorFlow v2.18
