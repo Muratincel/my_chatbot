@@ -41,6 +41,10 @@ we create train_model.py we load tokenizer (tokenizer.pkl) define encoder and de
 
 You will only need .npz and .pkl files and train_model.py in order to run. And huge compute power to train..
 
+#### Data size; 
+Total Input-Output Pairs: 221616
+Training Pairs: 177292, Validation Pairs: 44324
+
 python v10.0
 
 TensorFlow v2.18
