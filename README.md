@@ -43,6 +43,7 @@ You will only need .npz and .pkl files and train_model.py in order to run. And h
 
 #### Data size; 
 Total Input-Output Pairs: 221616
+
 Training Pairs: 177292, Validation Pairs: 44324
 
 python v10.0
